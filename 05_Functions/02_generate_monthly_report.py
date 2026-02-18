@@ -12,5 +12,6 @@ def geenrate_report():
     filtered_valid_orders()
     summarize_data()
     print("Report Generated")
+    print("Report Genarated")
 
 geenrate_report()
