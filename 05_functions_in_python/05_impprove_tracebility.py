@@ -5,3 +5,4 @@ orders_price = [100,200,350,150]
 
 for goru in orders_price:
     add_vat(goru,11)
+ 
