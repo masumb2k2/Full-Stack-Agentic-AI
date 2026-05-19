@@ -24,5 +24,14 @@ print(f"Reverse: {life_update[::-1]}")
 
 
 
+# Encoding 
+label_text = "こんにちは"
+print(f"Label text: {label_text}")
 
+encoded_text = label_text.encode("utf-8")
+# b'\xe3\x81\x93\xe3\x82\x93\xe3\x81\xab\xe3\x81\xa1\xe3\x81\xaf'
+print(f"Encoded text :{encoded_text}")
+
+decoded_text = encoded_text.decode('utf-8')
+print(f"Decoded Text : { decoded_text}")
 
