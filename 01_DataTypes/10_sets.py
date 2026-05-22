@@ -3,7 +3,6 @@
 # Touple List Set 
 
 shop_item = {"Fried Rice", 'Chicken Fry', 'onthon', 'Tea', 'coffee'}
-
 new_item = {'coffee', 'biriyani', 'hot choclate', 'coffee' }
 
 print(f"New added item: {new_item}")
