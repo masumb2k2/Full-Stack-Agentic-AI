@@ -50,3 +50,29 @@ print(f"Updated Customer List : {registered_customer}")
 
 university_data = registered_customer.get('university', 'Not found')
 print(f"Customer Name: {university_data}")
+
+
+# all customer data
+all_customer_data = [
+    {'name': 'sabrina', 'age': 24, 'gender': 'Female'},
+    {'name': 'Mehtaz', 'age': 30, 'gender': 'Female'},
+    {'name': 'oishi', 'age': 28, 'gender': 'Female'},
+]
+print(f"type of customer data: {type(all_customer_data)}")
+
+print(f"Mehtaz data {all_customer_data[1]}")
+mehtaz_data = all_customer_data[1]
+print(f"type of mehtaz data: {type(mehtaz_data)}")
+mehtaz_name = mehtaz_data.get('name', 'no name')
+print(f'Mehtaz name: {mehtaz_name[1:4]}')
+print(f"type of mehtaz name: {type(mehtaz_name)}")
+
+# List inside Dictionary
+all_customer_history = {
+    'name': ['masum','john'],
+    'age': [24, 22]
+}
+all_age = all_customer_history['age']
+print(f'All age: {all_age}')
+
+print(f"John age: {all_age[1]}")
