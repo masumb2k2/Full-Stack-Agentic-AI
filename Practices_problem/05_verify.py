@@ -20,3 +20,12 @@ else:
 # Problem 3 — Loops
 for number in range(1,11):
     print(f"7 X {number} = {7*number}")
+
+
+# Problem 4 — List
+programming_languages = ['Python','C','C++' ,'jave', 'Dart']
+print(f"First item is {programming_languages[0]} and last item is {programming_languages[-1]}")
+programming_languages.append("Ruby")
+
+programming_languages.pop(1)
+print(f"Final List: {programming_languages}")
