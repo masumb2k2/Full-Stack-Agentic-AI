@@ -29,3 +29,18 @@ programming_languages.append("Ruby")
 
 programming_languages.pop(1)
 print(f"Final List: {programming_languages}")
+
+# Problem 5 — Dictionary
+student = {
+    'name': 'Masum',
+    'age' : 24,
+    'gpa' : 3.84,
+    'city' : 'Dhaka'
+}
+
+for key, value in student.items():
+    print(f"key {key}: value {value}")
+
+student['city'] = 'Jhenaidah'
+student['graduating'] = True
+print(f"Final dictionary: {student}")
