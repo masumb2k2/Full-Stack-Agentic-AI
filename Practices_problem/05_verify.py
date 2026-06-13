@@ -44,3 +44,13 @@ for key, value in student.items():
 student['city'] = 'Jhenaidah'
 student['graduating'] = True
 print(f"Final dictionary: {student}")
+
+# Problem 6 — Tuple & Set
+countries = ('Bangladesh', 'India' , 'Japaan', 'China')
+# countries[1] = 'USA'
+# TypeError: 'tuple' object does not support item assignment
+# show this error because touple is immutable data type, user dont can change it's value after assign once
+
+my_favorite_language = {'Python', 'Dart', 'Java'}
+friend_favorite_language = {'PHP', 'Python', 'Java'}
+print(f"Common languages in both: {my_favorite_language & friend_favorite_language}")
