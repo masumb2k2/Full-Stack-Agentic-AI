@@ -54,3 +54,19 @@ countries = ('Bangladesh', 'India' , 'Japaan', 'China')
 my_favorite_language = {'Python', 'Dart', 'Java'}
 friend_favorite_language = {'PHP', 'Python', 'Java'}
 print(f"Common languages in both: {my_favorite_language & friend_favorite_language}")
+
+# Problem 7 — Function
+def student_result (name, marks):
+    if len(marks) != 3:
+        return Print("value Error")
+    else:
+        average_mark = (marks[0] + marks[1] + marks[2]) / len(marks)
+        if average_mark >= 50:
+            return print(f"{name} passed with average {average_mark}")
+        elif average_mark <50:
+            return print(f"{name} filed with average {average_mark}")
+        else:
+            return print("Invalid input")
+        
+student_result('Masum', [88,94,77])
+student_result('Mohua', [40,60,35])
