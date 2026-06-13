@@ -17,3 +17,6 @@ elif number == 0:
 else:
     print(f"{number} is invalid")
 
+# Problem 3 — Loops
+for number in range(1,11):
+    print(f"7 X {number} = {7*number}")
