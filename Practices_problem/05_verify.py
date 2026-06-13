@@ -12,10 +12,9 @@ if number>0:
     print(f"{number} is Positive Number")
 elif number<0:
     print(f"{number} is Negative Number")
-elif number == 0:
-    print(f"{number} is Zero")
 else:
-    print(f"{number} is invalid")
+    print(f"{number} is Zero")
+
 
 # Problem 3 — Loops
 for number in range(1,11):
@@ -58,15 +57,14 @@ print(f"Common languages in both: {my_favorite_language & friend_favorite_langua
 # Problem 7 — Function
 def student_result (name, marks):
     if len(marks) != 3:
-        return Print("value Error")
+        print("value Error")
     else:
-        average_mark = (marks[0] + marks[1] + marks[2]) / len(marks)
+        average_mark = sum(marks) / len(marks)
         if average_mark >= 50:
-            return print(f"{name} passed with average {average_mark}")
-        elif average_mark <50:
-            return print(f"{name} filed with average {average_mark}")
+            print(f"{name} passed with average {average_mark}")
         else:
-            return print("Invalid input")
+            print(f"{name} failed with average {average_mark}")
+        
         
 student_result('Masum', [88,94,77])
 student_result('Mohua', [40,60,35])
