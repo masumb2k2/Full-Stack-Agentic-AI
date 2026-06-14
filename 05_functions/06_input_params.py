@@ -11,3 +11,29 @@ def edit_tea(cup):
 
 edit_tea(tea)
 print(tea) 
+
+
+def make_tea(tea, milk, sugar):
+    print(tea,milk, sugar)
+
+make_tea('Dhaka','yes', 'Low') # positional
+make_tea(tea='green', milk='Medium',sugar='high') # Keyword
+
+# Args and *Kwargs
+def special_tea(*ingredients , **extras):
+    print("Ingredients", ingredients)
+    print("Extras",extras)
+
+special_tea("Cinamon", 'Cardmom' , sweetner= 'Honey', foam= "soap")
+
+# def tea_orders(order = []):
+#     order.append('Masala')
+#     print(order)
+# tea_orders()
+
+def tea_orders(order = None):
+    if order is None:
+        order= []
+    print(order)
+tea_orders()
+tea_orders()
