@@ -17,7 +17,7 @@ def pour_tea(n):
 print(pour_tea(3))
 
 
-# Lamdas Function
+# Lamdas Function (annonumous function)
 tea_types = ['Light', 'kadak', 'gingar', 'kadak']
 
 strong_tea = list(filter(lambda tea: tea !='kadak',tea_types))
