@@ -13,5 +13,5 @@ def generate_bill(tea = 0, samosa = 0):
     : parm: samosa : number of samosa
     : return toal
     """
-    total = chai*10 +samosa*15
+    total = tea *10 +samosa*15
     return total, "Thank you"
