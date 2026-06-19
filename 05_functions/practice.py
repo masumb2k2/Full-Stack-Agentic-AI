@@ -19,3 +19,9 @@
 
 
 
+def tea_details():
+    """
+    Rendering tea details
+    """
+    return "Tea details loaded"
+print(tea_details.__doc__)
