@@ -1,17 +1,18 @@
-def order_datils(tea_type , cups, amount):
-    return f"Tea type {tea_type}, cups {cups}, anount {amount}"
+# nothing return from function
+def nothing_return():
+    pass
+print(nothing_return())
 
-print(order_datils('gingar',12,120))
-print(order_datils(tea_type='elachi',cups=5,amount=100))
 
-def order_items(*items, **amount):
-    return f"Iteams are {items} and amount are {amount}"
+# Early rerutn
+def early_return(number =0):
+    if number %2==0:
+        return "Even number"
+    return "Odd number"
+print(early_return(13))
 
-print(order_items('Tea', 'cooffee', tea_amount = 12, coffee_amount = 5))
+# return multiple value 
+def return_multiple(type=10,cups=23 , price=100):
+    return type, cups, price
 
-# Null value handel 
-def order_values(order = None):
-    if order is None:
-        order = []
-    print(order)
-order_values([12,3,4])
+tea_type, tea_cups, _ = return_multiple()
