@@ -6,7 +6,6 @@ tea_type = 'Lemom'
 serve_tea()
 print(f"Outside Function: {tea_type}")
 
-
 def tea_counter():
     tea_order = 'Lemon' #Enclosing Scope
     def print_order():
